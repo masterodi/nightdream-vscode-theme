@@ -1,0 +1,28 @@
+{
+	"name": "nightdream",
+	"displayName": "Nightdream",
+	"description": "A theme (not just) for those who like to work at night.",
+	"version": "0.0.1",
+	"type": "module",
+	"engines": {
+		"vscode": "^1.88.0"
+	},
+	"categories": [
+		"Themes"
+	],
+	"contributes": {
+		"themes": [
+			{
+				"label": "Nightdream",
+				"uiTheme": "vs-dark",
+				"path": "./themes/Nightdream-color-theme.json"
+			}
+		]
+	},
+	"scripts": {
+		"dev": "bun --watch run src/index.ts"
+	},
+	"devDependencies": {
+		"@types/node": "^20.12.7"
+	}
+}
