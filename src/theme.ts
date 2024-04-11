@@ -4,10 +4,10 @@ import { WorkbenchColors } from './types/workbench-colors';
 const colors = {
 	bg: {
 		TRANSPARENT: '#00000000',
-		BASE: '#1f222f',
-		LIGHT: '#26293a',
-		LIGHTEST: '#2c2f43',
-		DARK: '#1d202d',
+		BASE: '#252938',
+		LIGHT: '#363a51',
+		LIGHTEST: '#3e435d',
+		DARK: '#232635',
 	},
 	foreground: {
 		BASE: '#bfc4f8',
@@ -25,14 +25,14 @@ const colors = {
 		DARKEST: '#323444',
 	},
 	tokens: {
-		COMMENT: '#5b5e7c',
+		COMMENT: '#7b7fb7',
 		VARIABLE: '#ced3ff',
 		VARIABLE_PROPERTY: '#ecf3ff',
 		VARIABLE_CONSTANT: '',
-		FUNCTION: '#acc7ff',
+		FUNCTION: '#95bcff',
 		FUNCTION_PARAMETER: '#c3c7f3',
 		KEYWORD: '#cdb5ff',
-		STORAGE: '#8da6cb',
+		STORAGE: '#8b9dd9',
 		PRIMITIVE: '#91d7e3',
 		CLASS: '#91d7e3',
 		TAG: '#91d7e3',
@@ -44,7 +44,7 @@ const colors = {
 		CONSTANT: '#a7f0bd',
 		NUMBER: '#a7f0bd',
 		FALSY: '#eb91aa',
-		OPERATOR: '#91d7e3',
+		OPERATOR: '#b3ceff',
 		CSS_PROPERTY_NAME: '#eb91aa',
 		VARIABLE_READWRITE_ALIAS: '#ecf3ff',
 		JSON_KEY: '#cdb5ff',
@@ -75,20 +75,20 @@ export const theme: Theme = {
 		'activityBar.activeBackground': colors.bg.TRANSPARENT,
 		'activityBar.activeBorder': colors.bg.TRANSPARENT,
 		'activityBar.activeFocusBorder': colors.accent.BASE,
-		'activityBar.background': colors.bg.DARK,
+		'activityBar.background': colors.bg.BASE,
 		'activityBar.border': colors.border.BASE,
 		'activityBar.foreground': colors.foreground.BASE,
 		'activityBar.inactiveForeground': colors.foreground.DIMMED,
 		'activityBarBadge.background': colors.accent.BASE,
 		'activityBarBadge.foreground': colors.accent.DARKEST,
 
-		'sideBar.background': colors.bg.DARK,
-		'sideBarSectionHeader.background': colors.bg.DARK,
+		'sideBar.background': colors.bg.BASE,
+		'sideBarSectionHeader.background': colors.bg.BASE,
 		'list.activeSelectionBackground': colors.bg.LIGHT,
 		'list.hoverBackground': colors.bg.LIGHTEST,
 		'list.inactiveSelectionBackground': colors.bg.LIGHT,
 
-		'statusBar.background': colors.bg.DARK,
+		'statusBar.background': colors.bg.BASE,
 		'statusBar.foreground': colors.foreground.BASE,
 		'statusBar.noFolderBackground': colors.bg.BASE,
 		'statusBar.debuggingBackground': colors.bg.LIGHT,
@@ -105,8 +105,8 @@ export const theme: Theme = {
 		'editorSuggestWidget.highlightForeground': colors.accent.BASE,
 		'editorSuggestWidget.focusHighlightForeground': colors.accent.LIGHT,
 
-		'titleBar.activeBackground': colors.bg.DARK,
-		'titleBar.inactiveBackground': colors.bg.DARK,
+		'titleBar.activeBackground': colors.bg.BASE,
+		'titleBar.inactiveBackground': colors.bg.BASE,
 		'titleBar.activeForeground': colors.foreground.BASE,
 
 		'menu.background': colors.bg.DARK,
@@ -120,11 +120,11 @@ export const theme: Theme = {
 		'editorGroupHeader.tabsBackground': colors.bg.DARK,
 
 		'tab.activeBackground': colors.bg.LIGHT,
-		'tab.inactiveBackground': colors.bg.DARK,
+		'tab.inactiveBackground': colors.bg.BASE,
 
-		'breadcrumb.background': colors.bg.DARK,
+		'breadcrumb.background': colors.bg.BASE,
 
-		'panel.background': colors.bg.DARK,
+		'panel.background': colors.bg.BASE,
 		'panelTitle.activeForeground': colors.foreground.BASE,
 		'panel.border': colors.border.BASE,
 
@@ -351,9 +351,6 @@ export const theme: Theme = {
 				'punctuation.definition.variable',
 				'punctuation.separator.colon',
 				'punctuation.separator.period',
-				'punctuation.section',
-				'keyword.other.unit',
-				'punctuation.definition.block',
 				'punctuation.definition.string',
 			],
 			settings: {
