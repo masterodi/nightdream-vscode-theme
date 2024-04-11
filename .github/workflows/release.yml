@@ -1,0 +1,23 @@
+name: Release
+
+on:
+    push:
+        branches:
+            - main
+    workflow_dispatch: # Put here!!
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+
+        steps:
+            - uses: actions/checkout@v4
+            - uses: oven-sh/setup-bun@v1
+              with:
+                  bun-version: latest
+
+            - name: Install vsce
+              run: bun i -g vsce
+
+            - name: Publish
+              run: vsce publish -p ${{ secrets.VSCE_TOKEN }}
