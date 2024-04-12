@@ -7,7 +7,7 @@ const colors = {
 		BASE: '#252938',
 		LIGHT: '#363a51',
 		LIGHTEST: '#3e435d',
-		DARK: '#232635',
+		DARK: '#202230',
 	},
 	foreground: {
 		BASE: '#bfc4f8',
@@ -19,8 +19,8 @@ const colors = {
 		BASE: '#00000000',
 	},
 	accent: {
-		BASE: '#b7bdf8',
-		LIGHT: '#d5d9f8',
+		BASE: '#a7bef8',
+		LIGHT: '#d5dff8',
 		DARK: '#5b5e7c',
 		DARKEST: '#323444',
 	},
@@ -66,8 +66,11 @@ export const theme: Theme = {
 		'icon.foreground': colors.accent.BASE,
 		'badge.background': colors.accent.BASE,
 		'badge.foreground': colors.accent.DARKEST,
-		'input.background': colors.bg.BASE,
+		'input.background': colors.bg.DARK,
 		'input.foreground': colors.foreground.LIGHT,
+		'inputOption.activeBackground': colors.bg.LIGHT,
+		'inputOption.activeForeground': colors.foreground.LIGHT,
+		'inputOption.activeBorder': colors.border.BASE,
 		'button.background': colors.accent.BASE,
 		'button.foreground': colors.foreground.DIMMED_EXTRA,
 		'button.hoverBackground': colors.accent.LIGHT,
@@ -87,6 +90,7 @@ export const theme: Theme = {
 		'list.activeSelectionBackground': colors.bg.LIGHT,
 		'list.hoverBackground': colors.bg.LIGHTEST,
 		'list.inactiveSelectionBackground': colors.bg.LIGHT,
+		'list.highlightForeground': colors.accent.BASE,
 
 		'statusBar.background': colors.bg.BASE,
 		'statusBar.foreground': colors.foreground.BASE,
@@ -102,6 +106,7 @@ export const theme: Theme = {
 		'editor.selectionBackground': colors.bg.LIGHT,
 
 		'editorWidget.background': colors.bg.DARK,
+		'editorWidget.foreground': colors.foreground.BASE,
 		'editorSuggestWidget.highlightForeground': colors.accent.BASE,
 		'editorSuggestWidget.focusHighlightForeground': colors.accent.LIGHT,
 
@@ -123,10 +128,12 @@ export const theme: Theme = {
 		'tab.inactiveBackground': colors.bg.BASE,
 
 		'breadcrumb.background': colors.bg.BASE,
+		'breadcrumb.foreground': colors.foreground.BASE,
 
 		'panel.background': colors.bg.BASE,
 		'panelTitle.activeForeground': colors.foreground.BASE,
 		'panel.border': colors.border.BASE,
+		'terminal.foreground': colors.foreground.BASE,
 
 		'terminal.ansiBlack': '#1e2030',
 		'terminal.ansiBlue': '#8aadf4',
