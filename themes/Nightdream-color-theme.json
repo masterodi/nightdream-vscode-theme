@@ -39,7 +39,7 @@
         "editorLineNumber.foreground": "#5b5e7c",
         "editorLineNumber.activeForeground": "#d5d9f8",
         "editorLineNumber.dimmedForeground": "#323444",
-        "editor.selectionBackground": "#363a51",
+        "editor.selectionBackground": "#3e435d",
         "editorWidget.background": "#202230",
         "editorWidget.foreground": "#bfc4f8",
         "editorSuggestWidget.highlightForeground": "#a7bef8",
@@ -118,7 +118,7 @@
                 "meta.object.member"
             ],
             "settings": {
-                "foreground": "#ecf3ff"
+                "foreground": "#b9efff"
             }
         },
         {
@@ -231,7 +231,7 @@
                 "entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#b7aeff"
+                "foreground": "#abc1ff"
             }
         },
         {
@@ -249,7 +249,7 @@
                 "string"
             ],
             "settings": {
-                "foreground": "#a7f0bd"
+                "foreground": "#5de4c7"
             }
         },
         {
