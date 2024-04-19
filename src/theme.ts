@@ -4,7 +4,7 @@ import { WorkbenchColors } from './types/workbench-colors';
 const colors = {
 	bg: {
 		TRANSPARENT: '#00000000',
-		BASE: '#252835',
+		BASE: '#272a39',
 		LIGHT: '#363a51',
 		LIGHTEST: '#454b68',
 		DARK: '#202230',
@@ -27,7 +27,7 @@ const colors = {
 	tokens: {
 		COMMENT: '#7b7fb7',
 		VARIABLE: '#ced3ff',
-		VARIABLE_PROPERTY: '#b9efff',
+		VARIABLE_PROPERTY: '#e4f0fb',
 		VARIABLE_CONSTANT: '',
 		FUNCTION: '#95bcff',
 		FUNCTION_PARAMETER: '#c3c7f3',
@@ -123,6 +123,8 @@ export const theme: Theme = {
 		'peekViewResult.lineForeground': colors.foreground.DIMMED,
 		'peekViewTitleDescription.foreground': colors.foreground.DIMMED,
 
+		'debugToolBar.background': colors.bg.DARK,
+
 		'titleBar.activeBackground': colors.bg.BASE,
 		'titleBar.inactiveBackground': colors.bg.BASE,
 		'titleBar.activeForeground': colors.foreground.BASE,
@@ -195,7 +197,6 @@ export const theme: Theme = {
 				'support.variable',
 				'variable.other.predefined',
 				'variable.other.property',
-				'meta.object.member',
 			],
 			settings: {
 				foreground: colors.tokens.VARIABLE_PROPERTY,
