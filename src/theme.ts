@@ -4,10 +4,10 @@ import { WorkbenchColors } from './types/workbench-colors';
 const colors = {
 	bg: {
 		TRANSPARENT: '#00000000',
-		BASE: '#272a39',
+		BASE: '#1d202b',
 		LIGHT: '#363a51',
 		LIGHTEST: '#454b68',
-		DARK: '#202230',
+		DARK: '#181b24',
 	},
 	foreground: {
 		BASE: '#bfc4f8',
@@ -31,7 +31,7 @@ const colors = {
 		VARIABLE_CONSTANT: '',
 		FUNCTION: '#95bcff',
 		FUNCTION_PARAMETER: '#c3c7f3',
-		KEYWORD: '#cdb5ff',
+		KEYWORD: '#8488f1',
 		STORAGE: '#8b9dd9',
 		PRIMITIVE: '#91d7e3',
 		CLASS: '#91d7e3',
@@ -46,8 +46,8 @@ const colors = {
 		FALSY: '#eb91aa',
 		OPERATOR: '#b3ceff',
 		CSS_PROPERTY_NAME: '#eb91aa',
-		VARIABLE_READWRITE_ALIAS: '#b9efff',
-		JSON_KEY: '#cdb5ff',
+		VARIABLE_READWRITE_ALIAS: '#add7ff',
+		JSON_KEY: '#add7ff',
 	},
 };
 
