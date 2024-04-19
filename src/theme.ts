@@ -4,15 +4,15 @@ import { WorkbenchColors } from './types/workbench-colors';
 const colors = {
 	bg: {
 		TRANSPARENT: '#00000000',
-		BASE: '#252938',
+		BASE: '#252835',
 		LIGHT: '#363a51',
-		LIGHTEST: '#3e435d',
+		LIGHTEST: '#454b68',
 		DARK: '#202230',
 	},
 	foreground: {
 		BASE: '#bfc4f8',
 		LIGHT: '#d5d9f8',
-		DIMMED: '#5b5e7c',
+		DIMMED: '#7c80aa',
 		DIMMED_EXTRA: '#323444',
 	},
 	border: {
@@ -39,14 +39,14 @@ const colors = {
 		PUNCTUATION_TAG: '#e5faff',
 		ATTRIBUTE: '#abc1ff',
 		ID: '#98efff',
-		STRING: '#5de4c7',
+		STRING: '#69e4c9',
 		REGEXP: '#bfffd2',
 		CONSTANT: '#a7f0bd',
 		NUMBER: '#a7f0bd',
 		FALSY: '#eb91aa',
 		OPERATOR: '#b3ceff',
 		CSS_PROPERTY_NAME: '#eb91aa',
-		VARIABLE_READWRITE_ALIAS: '#ecf3ff',
+		VARIABLE_READWRITE_ALIAS: '#b9efff',
 		JSON_KEY: '#cdb5ff',
 	},
 };
@@ -74,6 +74,9 @@ export const theme: Theme = {
 		'button.background': colors.accent.BASE,
 		'button.foreground': colors.foreground.DIMMED_EXTRA,
 		'button.hoverBackground': colors.accent.LIGHT,
+		'dropdown.background': colors.bg.DARK,
+		'dropdown.border': colors.border.BASE,
+		'dropdown.foreground': colors.foreground.BASE,
 
 		'activityBar.activeBackground': colors.bg.TRANSPARENT,
 		'activityBar.activeBorder': colors.bg.TRANSPARENT,
@@ -104,11 +107,21 @@ export const theme: Theme = {
 		'editorLineNumber.activeForeground': colors.foreground.LIGHT,
 		'editorLineNumber.dimmedForeground': colors.foreground.DIMMED_EXTRA,
 		'editor.selectionBackground': colors.bg.LIGHTEST,
+		'editor.wordHighlightBackground': colors.bg.LIGHTEST,
 
 		'editorWidget.background': colors.bg.DARK,
 		'editorWidget.foreground': colors.foreground.BASE,
 		'editorSuggestWidget.highlightForeground': colors.accent.BASE,
 		'editorSuggestWidget.focusHighlightForeground': colors.accent.LIGHT,
+
+		'peekViewEditor.background': colors.bg.DARK,
+		'peekView.border': colors.border.BASE,
+		'peekViewEditorGutter.background': colors.bg.DARK,
+		'peekViewResult.background': colors.bg.DARK,
+		'peekViewTitle.background': colors.bg.DARK,
+		'peekViewTitleLabel.foreground': colors.foreground.LIGHT,
+		'peekViewResult.lineForeground': colors.foreground.DIMMED,
+		'peekViewTitleDescription.foreground': colors.foreground.DIMMED,
 
 		'titleBar.activeBackground': colors.bg.BASE,
 		'titleBar.inactiveBackground': colors.bg.BASE,
@@ -122,7 +135,7 @@ export const theme: Theme = {
 		'menubar.selectionBackground': colors.bg.LIGHT,
 		'menubar.selectionForeground': colors.foreground.LIGHT,
 
-		'editorGroupHeader.tabsBackground': colors.bg.DARK,
+		'editorGroupHeader.tabsBackground': colors.bg.BASE,
 
 		'tab.activeBackground': colors.bg.LIGHT,
 		'tab.inactiveBackground': colors.bg.BASE,
