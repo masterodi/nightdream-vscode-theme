@@ -4,13 +4,13 @@ import { WorkbenchColors } from './types/workbench-colors';
 const colors = {
 	bg: {
 		TRANSPARENT: '#00000000',
-		BASE: '#1d202b',
-		LIGHT: '#363a51',
-		LIGHTEST: '#454b68',
+		BASE: '#1f222b',
+		LIGHT: '#292b39',
+		LIGHTEST: '#2d2f3f',
 		DARK: '#181b24',
 	},
 	foreground: {
-		BASE: '#bfc4f8',
+		BASE: '#969ac3',
 		LIGHT: '#d5d9f8',
 		DIMMED: '#7c80aa',
 		DIMMED_EXTRA: '#323444',
@@ -31,7 +31,7 @@ const colors = {
 		VARIABLE_CONSTANT: '',
 		FUNCTION: '#95bcff',
 		FUNCTION_PARAMETER: '#c3c7f3',
-		KEYWORD: '#8488f1',
+		KEYWORD: '#bbabff',
 		STORAGE: '#8b9dd9',
 		PRIMITIVE: '#91d7e3',
 		CLASS: '#91d7e3',
@@ -43,6 +43,7 @@ const colors = {
 		REGEXP: '#bfffd2',
 		CONSTANT: '#a7f0bd',
 		NUMBER: '#a7f0bd',
+		TRUTHY: '',
 		FALSY: '#eb91aa',
 		OPERATOR: '#b3ceff',
 		CSS_PROPERTY_NAME: '#eb91aa',
@@ -79,7 +80,7 @@ export const theme: Theme = {
 		'dropdown.foreground': colors.foreground.BASE,
 
 		'activityBar.activeBackground': colors.bg.TRANSPARENT,
-		'activityBar.activeBorder': colors.bg.TRANSPARENT,
+		'activityBar.activeBorder': colors.accent.BASE,
 		'activityBar.activeFocusBorder': colors.accent.BASE,
 		'activityBar.background': colors.bg.BASE,
 		'activityBar.border': colors.border.BASE,
@@ -91,8 +92,10 @@ export const theme: Theme = {
 		'sideBar.background': colors.bg.BASE,
 		'sideBarSectionHeader.background': colors.bg.BASE,
 		'list.activeSelectionBackground': colors.bg.LIGHT,
+		'list.activeSelectionForeground': colors.foreground.LIGHT,
 		'list.hoverBackground': colors.bg.LIGHTEST,
 		'list.inactiveSelectionBackground': colors.bg.LIGHT,
+		'list.inactiveSelectionForeground': colors.foreground.LIGHT,
 		'list.highlightForeground': colors.accent.BASE,
 
 		'statusBar.background': colors.bg.BASE,
@@ -101,7 +104,7 @@ export const theme: Theme = {
 		'statusBar.debuggingBackground': colors.bg.LIGHT,
 
 		'editor.background': colors.bg.BASE,
-		'editor.foreground': colors.foreground.BASE,
+		'editor.foreground': colors.foreground.LIGHT,
 		'editor.lineHighlightBackground': colors.bg.LIGHT,
 		'editorLineNumber.foreground': colors.foreground.DIMMED,
 		'editorLineNumber.activeForeground': colors.foreground.LIGHT,
