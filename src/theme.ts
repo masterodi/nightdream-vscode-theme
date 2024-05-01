@@ -4,9 +4,10 @@ import { WorkbenchColors } from './types/workbench-colors';
 const colors = {
 	bg: {
 		TRANSPARENT: '#00000000',
-		BASE: '#1f222b',
+		BASE: '#1d2029',
 		LIGHT: '#292b39',
 		LIGHTEST: '#2d2f3f',
+		LIGHTESTLIGHTEST: '#464962',
 		DARK: '#181b24',
 	},
 	foreground: {
@@ -28,7 +29,7 @@ const colors = {
 		COMMENT: '#7b7fb7',
 		VARIABLE: '#ced3ff',
 		VARIABLE_PROPERTY: '#e4f0fb',
-		VARIABLE_CONSTANT: '',
+		VARIABLE_CONSTANT: '#add7ff',
 		FUNCTION: '#95bcff',
 		FUNCTION_PARAMETER: '#c3c7f3',
 		KEYWORD: '#bbabff',
@@ -39,11 +40,11 @@ const colors = {
 		PUNCTUATION_TAG: '#e5faff',
 		ATTRIBUTE: '#abc1ff',
 		ID: '#98efff',
-		STRING: '#69e4c9',
+		STRING: '#6aeace',
 		REGEXP: '#bfffd2',
-		CONSTANT: '#a7f0bd',
-		NUMBER: '#a7f0bd',
-		TRUTHY: '',
+		CONSTANT: '#6aeace',
+		NUMBER: '#6aeace',
+		TRUTHY: '#bbabff',
 		FALSY: '#eb91aa',
 		OPERATOR: '#b3ceff',
 		CSS_PROPERTY_NAME: '#eb91aa',
@@ -106,10 +107,10 @@ export const theme: Theme = {
 		'editor.background': colors.bg.BASE,
 		'editor.foreground': colors.foreground.LIGHT,
 		'editor.lineHighlightBackground': colors.bg.LIGHT,
-		'editorLineNumber.foreground': colors.foreground.DIMMED,
+		'editorLineNumber.foreground': colors.foreground.DIMMED_EXTRA,
 		'editorLineNumber.activeForeground': colors.foreground.LIGHT,
 		'editorLineNumber.dimmedForeground': colors.foreground.DIMMED_EXTRA,
-		'editor.selectionBackground': colors.bg.LIGHTEST,
+		'editor.selectionBackground': colors.bg.LIGHTESTLIGHTEST,
 		'editor.wordHighlightBackground': colors.bg.LIGHTEST,
 
 		'editorWidget.background': colors.bg.DARK,
@@ -243,7 +244,6 @@ export const theme: Theme = {
 				'storage',
 				'variable.language',
 				'keyword.operator.expression',
-				'keyword.operator.new',
 				'keyword.function',
 			],
 			settings: {
@@ -344,6 +344,13 @@ export const theme: Theme = {
 			scope: ['constant.numeric'],
 			settings: {
 				foreground: colors.tokens.NUMBER,
+			},
+		},
+		{
+			name: 'Truthy',
+			scope: ['keyword.operator.new', 'keyword.control.new'],
+			settings: {
+				foreground: colors.tokens.TRUTHY,
 			},
 		},
 		{

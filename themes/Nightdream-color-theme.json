@@ -20,31 +20,31 @@
         "activityBar.activeBackground": "#00000000",
         "activityBar.activeBorder": "#a7bef8",
         "activityBar.activeFocusBorder": "#a7bef8",
-        "activityBar.background": "#1f222b",
+        "activityBar.background": "#1d2029",
         "activityBar.border": "#00000000",
         "activityBar.foreground": "#969ac3",
         "activityBar.inactiveForeground": "#7c80aa",
         "activityBarBadge.background": "#a7bef8",
         "activityBarBadge.foreground": "#323444",
-        "sideBar.background": "#1f222b",
-        "sideBarSectionHeader.background": "#1f222b",
+        "sideBar.background": "#1d2029",
+        "sideBarSectionHeader.background": "#1d2029",
         "list.activeSelectionBackground": "#292b39",
         "list.activeSelectionForeground": "#d5d9f8",
         "list.hoverBackground": "#2d2f3f",
         "list.inactiveSelectionBackground": "#292b39",
         "list.inactiveSelectionForeground": "#d5d9f8",
         "list.highlightForeground": "#a7bef8",
-        "statusBar.background": "#1f222b",
+        "statusBar.background": "#1d2029",
         "statusBar.foreground": "#969ac3",
-        "statusBar.noFolderBackground": "#1f222b",
+        "statusBar.noFolderBackground": "#1d2029",
         "statusBar.debuggingBackground": "#292b39",
-        "editor.background": "#1f222b",
+        "editor.background": "#1d2029",
         "editor.foreground": "#d5d9f8",
         "editor.lineHighlightBackground": "#292b39",
-        "editorLineNumber.foreground": "#7c80aa",
+        "editorLineNumber.foreground": "#323444",
         "editorLineNumber.activeForeground": "#d5d9f8",
         "editorLineNumber.dimmedForeground": "#323444",
-        "editor.selectionBackground": "#2d2f3f",
+        "editor.selectionBackground": "#464962",
         "editor.wordHighlightBackground": "#2d2f3f",
         "editorWidget.background": "#181b24",
         "editorWidget.foreground": "#969ac3",
@@ -59,8 +59,8 @@
         "peekViewResult.lineForeground": "#7c80aa",
         "peekViewTitleDescription.foreground": "#7c80aa",
         "debugToolBar.background": "#181b24",
-        "titleBar.activeBackground": "#1f222b",
-        "titleBar.inactiveBackground": "#1f222b",
+        "titleBar.activeBackground": "#1d2029",
+        "titleBar.inactiveBackground": "#1d2029",
         "titleBar.activeForeground": "#969ac3",
         "menu.background": "#181b24",
         "menu.foreground": "#969ac3",
@@ -69,12 +69,12 @@
         "menu.selectionBackground": "#292b39",
         "menubar.selectionBackground": "#292b39",
         "menubar.selectionForeground": "#d5d9f8",
-        "editorGroupHeader.tabsBackground": "#1f222b",
+        "editorGroupHeader.tabsBackground": "#1d2029",
         "tab.activeBackground": "#292b39",
-        "tab.inactiveBackground": "#1f222b",
-        "breadcrumb.background": "#1f222b",
+        "tab.inactiveBackground": "#1d2029",
+        "breadcrumb.background": "#1d2029",
         "breadcrumb.foreground": "#969ac3",
-        "panel.background": "#1f222b",
+        "panel.background": "#1d2029",
         "panelTitle.activeForeground": "#969ac3",
         "panel.border": "#00000000",
         "terminal.foreground": "#969ac3",
@@ -141,7 +141,7 @@
                 "variable.other.constant.object"
             ],
             "settings": {
-                "foreground": ""
+                "foreground": "#add7ff"
             }
         },
         {
@@ -182,7 +182,6 @@
                 "storage",
                 "variable.language",
                 "keyword.operator.expression",
-                "keyword.operator.new",
                 "keyword.function"
             ],
             "settings": {
@@ -263,7 +262,7 @@
                 "string"
             ],
             "settings": {
-                "foreground": "#69e4c9"
+                "foreground": "#6aeace"
             }
         },
         {
@@ -283,7 +282,7 @@
                 "support.type.builtin"
             ],
             "settings": {
-                "foreground": "#a7f0bd"
+                "foreground": "#6aeace"
             }
         },
         {
@@ -292,7 +291,17 @@
                 "constant.numeric"
             ],
             "settings": {
-                "foreground": "#a7f0bd"
+                "foreground": "#6aeace"
+            }
+        },
+        {
+            "name": "Truthy",
+            "scope": [
+                "keyword.operator.new",
+                "keyword.control.new"
+            ],
+            "settings": {
+                "foreground": "#bbabff"
             }
         },
         {
