@@ -141,7 +141,7 @@
                 "variable.other.constant.object"
             ],
             "settings": {
-                "foreground": "#add7ff"
+                "foreground": "#badcff"
             }
         },
         {
@@ -173,7 +173,7 @@
                 "meta.method.declaration storage.type"
             ],
             "settings": {
-                "foreground": "#bbabff"
+                "foreground": "#a798ff"
             }
         },
         {
@@ -209,7 +209,7 @@
                 "support.type"
             ],
             "settings": {
-                "foreground": "#60d6e0"
+                "foreground": "#b2f8ff"
             }
         },
         {
@@ -220,10 +220,11 @@
                 "variable.language.super",
                 "variable.parameter.function.language.special.self",
                 "variable.language.special.self",
-                "entity.name.tag.reference"
+                "entity.name.tag.reference",
+                "support.class.component"
             ],
             "settings": {
-                "foreground": "#60d6e0"
+                "foreground": "#b2f8ff"
             }
         },
         {
@@ -235,7 +236,7 @@
                 "punctuation.definition.typeparameters.end"
             ],
             "settings": {
-                "foreground": "#e5faff"
+                "foreground": "#6ab8be"
             }
         },
         {
@@ -271,7 +272,7 @@
                 "string.regexp"
             ],
             "settings": {
-                "foreground": "#bfffd2"
+                "foreground": "#5ddabf"
             }
         },
         {
