@@ -36,8 +36,8 @@ const colors = {
 		STORAGE: '#8b9dd9',
 		PRIMITIVE: '#81d8e0',
 		CLASS: '#b2f8ff',
-		TAG: '#b2f8ff',
-		PUNCTUATION_TAG: '#6ab8be',
+		TAG: '#6aeace',
+		PUNCTUATION_TAG: '#fff',
 		ATTRIBUTE: '#abc1ff',
 		ID: '#98efff',
 		STRING: '#6aeace',
@@ -232,8 +232,13 @@ export const theme: Theme = {
 			},
 		},
 		{
-			name: 'Keyword | Keyword operator',
-			scope: ['keyword', 'meta.method.declaration storage.type'],
+			name: 'Keyword | Keyword operator | Pseudo selectors',
+			scope: [
+				'keyword',
+				'meta.method.declaration storage.type',
+				'entity.other.attribute-name.pseudo-class',
+				'entity.other.attribute-name.pseudo-element',
+			],
 			settings: {
 				foreground: colors.tokens.KEYWORD,
 			},
@@ -252,11 +257,7 @@ export const theme: Theme = {
 		},
 		{
 			name: 'Primitive',
-			scope: [
-				'support.type.primitive',
-				'entity.other.attribute-name.pseudo-class',
-				'entity.other.attribute-name.pseudo-element',
-			],
+			scope: ['support.type.primitive'],
 			settings: {
 				foreground: colors.tokens.PRIMITIVE,
 			},

@@ -167,10 +167,12 @@
             }
         },
         {
-            "name": "Keyword | Keyword operator",
+            "name": "Keyword | Keyword operator | Pseudo selectors",
             "scope": [
                 "keyword",
-                "meta.method.declaration storage.type"
+                "meta.method.declaration storage.type",
+                "entity.other.attribute-name.pseudo-class",
+                "entity.other.attribute-name.pseudo-element"
             ],
             "settings": {
                 "foreground": "#a798ff"
@@ -191,9 +193,7 @@
         {
             "name": "Primitive",
             "scope": [
-                "support.type.primitive",
-                "entity.other.attribute-name.pseudo-class",
-                "entity.other.attribute-name.pseudo-element"
+                "support.type.primitive"
             ],
             "settings": {
                 "foreground": "#81d8e0"
@@ -224,7 +224,7 @@
                 "support.class.component"
             ],
             "settings": {
-                "foreground": "#b2f8ff"
+                "foreground": "#6aeace"
             }
         },
         {
@@ -236,7 +236,7 @@
                 "punctuation.definition.typeparameters.end"
             ],
             "settings": {
-                "foreground": "#6ab8be"
+                "foreground": "#fff"
             }
         },
         {
