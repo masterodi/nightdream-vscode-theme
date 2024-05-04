@@ -221,7 +221,8 @@
                 "variable.parameter.function.language.special.self",
                 "variable.language.special.self",
                 "entity.name.tag.reference",
-                "support.class.component"
+                "support.class.component",
+                "entity.name.type.class"
             ],
             "settings": {
                 "foreground": "#6aeace"

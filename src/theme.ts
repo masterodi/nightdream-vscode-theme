@@ -285,6 +285,7 @@ export const theme: Theme = {
 				'variable.language.special.self',
 				'entity.name.tag.reference',
 				'support.class.component',
+				'entity.name.type.class',
 			],
 			settings: {
 				foreground: colors.tokens.TAG,
