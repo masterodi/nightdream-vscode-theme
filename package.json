@@ -2,7 +2,7 @@
 	"name": "nightdream",
 	"displayName": "Nightdream",
 	"description": "A theme (not just) for those who like to work at night.",
-	"version": "0.0.14",
+	"version": "0.0.15",
 	"type": "module",
 	"engines": {
 		"vscode": "^1.87.0"

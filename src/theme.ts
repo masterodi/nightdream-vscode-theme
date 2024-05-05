@@ -39,7 +39,7 @@ const colors = {
 		TAG: '#6aeace',
 		PUNCTUATION_TAG: '#fff',
 		ATTRIBUTE: '#abc1ff',
-		ID: '#98efff',
+		ID: '#b2f8ff',
 		STRING: '#6aeace',
 		REGEXP: '#5ddabf',
 		CONSTANT: '#6aeace',
@@ -266,10 +266,10 @@ export const theme: Theme = {
 			name: 'Class',
 			scope: [
 				'support.class',
+				'support.type',
 				'entity.name.type',
 				'entity.other.inherited-class',
 				'entity.name.scope-resolution',
-				'support.type',
 			],
 			settings: {
 				foreground: colors.tokens.CLASS,
@@ -279,13 +279,12 @@ export const theme: Theme = {
 			name: 'Tag',
 			scope: [
 				'entity.name.tag',
-				'variable.language.this',
-				'variable.language.super',
-				'variable.parameter.function.language.special.self',
-				'variable.language.special.self',
 				'entity.name.tag.reference',
 				'support.class.component',
-				'entity.name.type.class',
+				'variable.language.this',
+				'variable.language.super',
+				'variable.language.special.self',
+				'variable.parameter.function.language.special.self',
 			],
 			settings: {
 				foreground: colors.tokens.TAG,
