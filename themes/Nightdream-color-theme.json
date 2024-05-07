@@ -112,7 +112,7 @@
                 "comment"
             ],
             "settings": {
-                "foreground": "#7b7fb7"
+                "foreground": "#8d90a6"
             }
         },
         {
@@ -187,7 +187,7 @@
                 "keyword.function"
             ],
             "settings": {
-                "foreground": "#8b9dd9"
+                "foreground": "#8291c1"
             }
         },
         {

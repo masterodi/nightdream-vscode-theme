@@ -1,7 +1,8 @@
 import { Binder } from './binder';
-import { Dialog } from './dialog';
 import { Channel } from './channel';
+import { Dialog } from './dialog';
 
+// comment test
 export class Bot {
 
   constructor() {
