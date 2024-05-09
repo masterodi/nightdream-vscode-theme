@@ -35,7 +35,7 @@ const colors = {
 		KEYWORD: '#a798ff',
 		STORAGE: '#8291c1',
 		PRIMITIVE: '#81d8e0',
-		CLASS: '#b2f8ff',
+		CLASS: '#89dce6',
 		TAG: '#6aeace',
 		PUNCTUATION_TAG: '#fff',
 		ATTRIBUTE: '#abc1ff',
