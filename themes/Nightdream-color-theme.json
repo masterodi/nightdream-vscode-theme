@@ -212,7 +212,7 @@
                 "support.class.component"
             ],
             "settings": {
-                "foreground": "#6aeace"
+                "foreground": "#67eed0"
             }
         },
         {
@@ -248,7 +248,7 @@
                 "entity.other.attribute-name.pseudo-class"
             ],
             "settings": {
-                "foreground": "#6aeace"
+                "foreground": "#67eed0"
             }
         },
         {
@@ -265,7 +265,7 @@
                 "constant.language"
             ],
             "settings": {
-                "foreground": "#6aeace"
+                "foreground": "#67eed0"
             }
         },
         {
@@ -273,7 +273,7 @@
                 "constant.numeric"
             ],
             "settings": {
-                "foreground": "#6aeace"
+                "foreground": "#67eed0"
             }
         },
         {
@@ -282,7 +282,7 @@
                 "keyword.control.new"
             ],
             "settings": {
-                "foreground": "#6aeace"
+                "foreground": "#37d3bc"
             }
         },
         {
