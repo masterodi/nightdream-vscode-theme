@@ -4,7 +4,7 @@ import { WorkbenchColors } from './types/workbench-colors';
 const colors = {
 	bg: {
 		TRANSPARENT: '#00000000',
-		BASE: '#1d2029',
+		BASE: '#1b1b27',
 		LIGHT: '#292b39',
 		LIGHTEST: '#2d2f3f',
 		LIGHTESTLIGHTEST: '#464962',
@@ -26,16 +26,16 @@ const colors = {
 		DARKEST: '#323444',
 	},
 	tokens: {
-		COMMENT: '#8d90a6',
+		COMMENT: '#5d6090',
 		VARIABLE: '#ced3ff',
 		VARIABLE_PROPERTY: '#e4f0fb',
 		VARIABLE_CONSTANT: '#badcff',
-		FUNCTION: '#95bcff',
+		FUNCTION: '#94b7ff',
 		FUNCTION_PARAMETER: '#c3c7f3',
-		KEYWORD: '#a798ff',
-		STORAGE: '#8291c1',
-		PRIMITIVE: '#81d8e0',
-		CLASS: '#89dce6',
+		KEYWORD: '#8b88ff',
+		STORAGE: '#9ea2e1',
+		PRIMITIVE: '#8ff3e1',
+		CLASS: '#8ff3ec',
 		TAG: '#6aeace',
 		PUNCTUATION_TAG: '#fff',
 		ATTRIBUTE: '#abc1ff',
@@ -44,12 +44,12 @@ const colors = {
 		REGEXP: '#5ddabf',
 		CONSTANT: '#6aeace',
 		NUMBER: '#6aeace',
-		TRUTHY: '#bbabff',
+		TRUTHY: '#6aeace',
 		FALSY: '#eb91aa',
 		OPERATOR: '#b3ceff',
 		CSS_PROPERTY_NAME: '#eb91aa',
 		VARIABLE_READWRITE_ALIAS: '#add7ff',
-		JSON_KEY: '#add7ff',
+		JSON_KEY: '#acb0e6',
 	},
 };
 
@@ -184,19 +184,16 @@ export const theme: Theme = {
 	},
 	tokenColors: [
 		{
-			name: 'Comment',
 			scope: ['comment'],
 			settings: {
 				foreground: colors.tokens.COMMENT,
 			},
 		},
 		{
-			name: 'Variable',
 			scope: ['variable'],
 			settings: { foreground: colors.tokens.VARIABLE },
 		},
 		{
-			name: 'Variable other property',
 			scope: [
 				'support.variable',
 				'variable.other.predefined',
@@ -207,91 +204,71 @@ export const theme: Theme = {
 			},
 		},
 		{
-			name: 'Variable other constant object',
 			scope: ['variable.other.constant.object'],
 			settings: {
 				foreground: colors.tokens.VARIABLE_CONSTANT,
 			},
 		},
 		{
-			name: 'Function',
 			scope: [
 				'entity.name.function',
 				'support.function',
-				'meta.function-call.generic',
-				'support.function.magic',
 				'punctuation.definition.template-expression',
 			],
 			settings: { foreground: colors.tokens.FUNCTION },
 		},
 		{
-			name: 'Function parameter',
 			scope: ['variable.parameter'],
 			settings: {
 				foreground: colors.tokens.FUNCTION_PARAMETER,
 			},
 		},
 		{
-			name: 'Keyword | Keyword operator | Pseudo selectors',
-			scope: [
-				'keyword',
-				'meta.method.declaration storage.type',
-				'entity.other.attribute-name.pseudo-class',
-				'entity.other.attribute-name.pseudo-element',
-			],
+			scope: ['keyword'],
 			settings: {
 				foreground: colors.tokens.KEYWORD,
 			},
 		},
 		{
-			name: 'Storage (let, const, async, function, class, extends, ...) | Variable language | Keyword operator expression | Keyword operator new',
-			scope: [
-				'storage',
-				'variable.language',
-				'keyword.operator.expression',
-				'keyword.function',
-			],
+			scope: ['storage'],
 			settings: {
 				foreground: colors.tokens.STORAGE,
 			},
 		},
 		{
-			name: 'Primitive',
+			scope: ['storage.modifier.async', 'storage.modifier'],
+			settings: {
+				foreground: colors.tokens.KEYWORD,
+			},
+		},
+		{
 			scope: ['support.type.primitive'],
 			settings: {
 				foreground: colors.tokens.PRIMITIVE,
 			},
 		},
 		{
-			name: 'Class',
 			scope: [
 				'support.class',
 				'support.type',
 				'entity.name.type',
 				'entity.other.inherited-class',
 				'entity.name.scope-resolution',
+				'variable.language.this',
+				'variable.language.super',
+				'variable.parameter.function.language.special.self',
 			],
 			settings: {
 				foreground: colors.tokens.CLASS,
 			},
 		},
 		{
-			name: 'Tag',
-			scope: [
-				'entity.name.tag',
-				'entity.name.tag.reference',
-				'support.class.component',
-				'variable.language.this',
-				'variable.language.super',
-				'variable.language.special.self',
-				'variable.parameter.function.language.special.self',
-			],
+			scope: ['entity.name.tag', 'support.class.component'],
 			settings: {
 				foreground: colors.tokens.TAG,
 			},
 		},
 		{
-			name: 'Punctuation tag',
 			scope: [
 				'punctuation.definition.tag.begin',
 				'punctuation.definition.tag.end',
@@ -303,60 +280,48 @@ export const theme: Theme = {
 			},
 		},
 		{
-			name: 'Attribute name',
 			scope: ['entity.other.attribute-name'],
 			settings: {
 				foreground: colors.tokens.ATTRIBUTE,
 			},
 		},
 		{
-			name: 'Id',
 			scope: ['entity.other.attribute-name.id'],
 			settings: {
 				foreground: colors.tokens.ID,
 			},
 		},
 		{
-			name: 'String',
-			scope: ['string'],
+			scope: ['string', 'entity.other.attribute-name.pseudo-class'],
 			settings: {
 				foreground: colors.tokens.STRING,
 			},
 		},
 		{
-			name: 'String regexp',
 			scope: ['string.regexp'],
 			settings: {
 				foreground: colors.tokens.REGEXP,
 			},
 		},
 		{
-			name: 'Constant',
-			scope: [
-				'support.constant',
-				'constant.language',
-				'support.type.builtin',
-			],
+			scope: ['support.constant', 'constant.language'],
 			settings: {
 				foreground: colors.tokens.CONSTANT,
 			},
 		},
 		{
-			name: 'Number',
 			scope: ['constant.numeric'],
 			settings: {
 				foreground: colors.tokens.NUMBER,
 			},
 		},
 		{
-			name: 'Truthy',
 			scope: ['keyword.operator.new', 'keyword.control.new'],
 			settings: {
 				foreground: colors.tokens.TRUTHY,
 			},
 		},
 		{
-			name: 'Falsy',
 			scope: [
 				'support.class.error',
 				'keyword.control.trycatch',
@@ -373,7 +338,6 @@ export const theme: Theme = {
 			},
 		},
 		{
-			name: 'Keyword operator',
 			scope: [
 				'keyword.operator',
 				'keyword.operator.assignment',
@@ -391,21 +355,23 @@ export const theme: Theme = {
 			},
 		},
 		{
-			name: 'CSS property name',
 			scope: ['source.css support.type.property-name'],
 			settings: {
 				foreground: colors.tokens.CSS_PROPERTY_NAME,
 			},
 		},
 		{
-			name: 'Variable other readwrite alias',
-			scope: ['variable.other.readwrite.alias', 'entity.name.namespace'],
+			scope: [
+				'variable.other.readwrite.alias',
+				'entity.name.namespace',
+				'storage.modifier.import',
+				'storage.modifier.package',
+			],
 			settings: {
 				foreground: colors.tokens.VARIABLE_READWRITE_ALIAS,
 			},
 		},
 		{
-			name: 'Json key, Yaml key',
 			scope: [
 				'support.type.property-name.json',
 				'source.yaml entity.name.tag',
