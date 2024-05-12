@@ -7,4 +7,3 @@ node_modules/**
 .github/**
 .git/**
 test/**
-assets/**
