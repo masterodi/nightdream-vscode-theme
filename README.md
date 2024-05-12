@@ -1,15 +1,15 @@
 ### Javascript
 
-![javascript](./assets/images/js.png)
+![javascript](assets/images/js.png)
 
 ### CSS
 
-![css](./assets/images/css.png)
+![css](assets/images/css.png)
 
 ### Flutter
 
-![flutter](./assets/images/flutter.png)
+![flutter](assets/images/flutter.png)
 
 ### Python
 
-![python](./assets/images/py.png)
+![python](assets/images/py.png)

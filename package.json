@@ -5,6 +5,10 @@
 	"icon": "assets/icon.png",
 	"version": "0.0.20",
 	"type": "module",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/mrheio/nightdream-vscode-theme.git"
+	},
 	"engines": {
 		"vscode": "^1.87.0"
 	},
