@@ -46,7 +46,7 @@ const colors = {
 		NUMBER: '#67eed0',
 		TRUTHY: '#37d3bc',
 		FALSY: '#eb91aa',
-		OPERATOR: '#b3ceff',
+		OPERATOR: '#9ea2e1',
 		CSS_PROPERTY_NAME: '#eb91aa',
 		VARIABLE_READWRITE_ALIAS: '#add7ff',
 		JSON_KEY: '#acb0e6',
