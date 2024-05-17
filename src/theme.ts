@@ -38,7 +38,7 @@ const colors = {
 		CLASS: '#8ff3ec',
 		TAG: '#67eed0',
 		PUNCTUATION_TAG: '#fff',
-		ATTRIBUTE: '#abc1ff',
+		ATTRIBUTE: '#9ea2e1',
 		ID: '#b2f8ff',
 		STRING: '#67eed0',
 		REGEXP: '#5ddabf',

@@ -3,7 +3,7 @@
 	"displayName": "Nightdream",
 	"description": "A theme (not just) for those who like to work at night.",
 	"icon": "assets/icon.png",
-	"version": "0.0.22",
+	"version": "0.0.23",
 	"type": "module",
 	"repository": {
 		"type": "git",

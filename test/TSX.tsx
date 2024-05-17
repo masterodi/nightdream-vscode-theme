@@ -11,7 +11,7 @@ const Component = () => (
 );
 
 export const Main = () => (
-	<div>
+	<div class='container'>
 		<Component />
 		{template}
 		<Component />
