@@ -1,12 +1,18 @@
 import { writeFileSync } from 'fs';
-import { theme } from './theme';
+import { colors } from './theme';
+import { VSCTheme } from './types/theme';
+import { Theme } from './utils';
 
-const themeJson = JSON.stringify(theme, undefined, 4);
+const getThemeName = (theme: VSCTheme) => {
+	return `${theme.name.replace(' ', '-')}-color-theme.json`;
+};
 
-writeFileSync(
-	`${process.cwd()}/themes/${theme.name.replace(' ', '-')}-color-theme.json`,
-	themeJson,
-	{
+const saveTheme = (theme: VSCTheme) => {
+	const themeJson = JSON.stringify(theme, undefined, 4);
+
+	writeFileSync(`${process.cwd()}/themes/${getThemeName(theme)}`, themeJson, {
 		encoding: 'utf8',
-	}
-);
+	});
+};
+
+saveTheme(new Theme('Nightdream', colors.workbench, colors.tokens).build());
