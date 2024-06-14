@@ -5,7 +5,8 @@ import {
 } from './types/theme';
 
 const createWorkbenchColors = (
-	colors: ThemeWorkbenchColors
+	colors: ThemeWorkbenchColors,
+	minimal: boolean = true
 ): VSCTheme['colors'] => ({
 	foreground: colors.foreground[500],
 	focusBorder: colors.accent[500],
@@ -27,15 +28,18 @@ const createWorkbenchColors = (
 	'activityBar.activeBackground': '#00000000',
 	'activityBar.activeBorder': colors.accent[500],
 	'activityBar.activeFocusBorder': colors.accent[500],
-	'activityBar.background': colors.bg[500],
-	'activityBar.border': colors.border,
+	'activityBar.background': minimal ? colors.bg[500] : colors.bg[600],
+	'activityBar.border': '#00000000',
 	'activityBar.foreground': colors.foreground[500],
 	'activityBar.inactiveForeground': colors.foreground[600],
 	'activityBarBadge.background': colors.accent[500],
 	'activityBarBadge.foreground': colors.accent[700] ?? colors.accent[600],
 
-	'sideBar.background': colors.bg[500],
-	'sideBarSectionHeader.background': colors.bg[500],
+	'sideBar.background': minimal ? colors.bg[500] : colors.bg[600],
+	'sideBar.border': colors.border,
+	'sideBarSectionHeader.background': minimal
+		? colors.bg[500]
+		: colors.bg[600],
 	'list.activeSelectionBackground': colors.bg[400],
 	'list.activeSelectionForeground': colors.foreground[400],
 	'list.hoverBackground': colors.bg[300] ?? colors.bg[400],
@@ -43,8 +47,9 @@ const createWorkbenchColors = (
 	'list.inactiveSelectionForeground': colors.foreground[400],
 	'list.highlightForeground': colors.accent[500],
 
-	'statusBar.background': colors.bg[500],
+	'statusBar.background': minimal ? colors.bg[500] : colors.bg[600],
 	'statusBar.foreground': colors.foreground[500],
+	'statusBar.border': colors.border,
 	'statusBar.noFolderBackground': colors.bg[500],
 	'statusBar.debuggingBackground': colors.bg[400],
 
@@ -76,9 +81,10 @@ const createWorkbenchColors = (
 
 	'debugToolBar.background': colors.bg[600],
 
-	'titleBar.activeBackground': colors.bg[500],
-	'titleBar.inactiveBackground': colors.bg[500],
+	'titleBar.activeBackground': minimal ? colors.bg[500] : colors.bg[600],
+	'titleBar.inactiveBackground': minimal ? colors.bg[500] : colors.bg[600],
 	'titleBar.activeForeground': colors.foreground[500],
+	'titleBar.border': colors.border,
 
 	'menu.background': colors.bg[600],
 	'menu.foreground': colors.foreground[500],
@@ -96,7 +102,7 @@ const createWorkbenchColors = (
 	'breadcrumb.background': colors.bg[500],
 	'breadcrumb.foreground': colors.foreground[500],
 
-	'panel.background': colors.bg[500],
+	'panel.background': minimal ? colors.bg[500] : colors.bg[600],
 	'panelTitle.activeForeground': colors.foreground[500],
 	'panel.border': colors.border,
 	'terminal.foreground': colors.foreground[500],
@@ -358,10 +364,10 @@ export class Theme {
 		this.tokens = tokens;
 	}
 
-	build(): VSCTheme {
+	build(minimal = true): VSCTheme {
 		return {
 			name: this.name,
-			colors: createWorkbenchColors(this.workbench),
+			colors: createWorkbenchColors(this.workbench, minimal),
 			tokenColors: createTokenColors(this.tokens),
 			semanticHighlighting: true,
 		};

@@ -1,14 +1,16 @@
 import { ThemeTokenColors, ThemeWorkbenchColors } from './types/theme';
 
-export const colors: {
+type Colors = {
 	workbench: ThemeWorkbenchColors;
 	tokens: ThemeTokenColors;
-} = {
+};
+
+export const colors = {
 	workbench: {
 		bg: {
 			300: '#3a3d52',
 			400: '#292b39',
-			500: '#1b1b27',
+			500: '#1f1f2c',
 			600: '#181b24',
 		},
 		foreground: {
@@ -51,4 +53,4 @@ export const colors: {
 		VARIABLE_READWRITE_ALIAS: '#add7ff',
 		JSON_KEY: '#acb0e6',
 	},
-};
+} satisfies Colors;
