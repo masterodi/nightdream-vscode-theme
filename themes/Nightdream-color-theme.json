@@ -166,7 +166,7 @@
                 "keyword"
             ],
             "settings": {
-                "foreground": "#8b88ff"
+                "foreground": "#80b8c6"
             }
         },
         {
@@ -183,7 +183,7 @@
                 "storage.modifier"
             ],
             "settings": {
-                "foreground": "#8b88ff"
+                "foreground": "#80b8c6"
             }
         },
         {
@@ -318,7 +318,7 @@
                 "punctuation.definition.string"
             ],
             "settings": {
-                "foreground": "#9ea2e1"
+                "foreground": "#badcff"
             }
         },
         {
