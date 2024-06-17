@@ -150,7 +150,7 @@
                 "punctuation.definition.template-expression"
             ],
             "settings": {
-                "foreground": "#94b7ff"
+                "foreground": "#84acff"
             }
         },
         {
@@ -166,7 +166,7 @@
                 "keyword"
             ],
             "settings": {
-                "foreground": "#80b8c6"
+                "foreground": "#0a94a6"
             }
         },
         {
@@ -183,7 +183,7 @@
                 "storage.modifier"
             ],
             "settings": {
-                "foreground": "#80b8c6"
+                "foreground": "#0a94a6"
             }
         },
         {
