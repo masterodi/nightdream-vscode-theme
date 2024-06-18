@@ -28,6 +28,12 @@ saveTheme(
 				500: '#262934',
 				600: '#22232c',
 			},
+			foreground: {
+				400: '#c2d2ff',
+				500: '#909cbd',
+				600: '#6f7892',
+				700: '#454b5b',
+			},
 		},
 		colors.tokens
 	).build()

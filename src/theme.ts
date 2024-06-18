@@ -23,8 +23,8 @@ export const colors = {
 		accent: {
 			400: '#c1e0ff',
 			500: '#add7ff',
-			600: '#a4ccf2',
-			700: '#97bcdf',
+			600: '#7c9ab8',
+			700: '#627b92',
 		},
 	},
 	tokens: {
