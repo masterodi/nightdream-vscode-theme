@@ -277,7 +277,7 @@ const createTokenColors = (
 		},
 	},
 	{
-		scope: ['constant.numeric'],
+		scope: ['constant.numeric', 'keyword.other.unit'],
 		settings: {
 			foreground: colors.NUMBER,
 		},

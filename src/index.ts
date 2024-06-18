@@ -22,7 +22,12 @@ saveTheme(
 		'Nightdream Sunlight',
 		{
 			...colors.workbench,
-			bg: { ...colors.workbench.bg, 400: '#404059', 500: '#292939' },
+			bg: {
+				...colors.workbench.bg,
+				400: '#41475a',
+				500: '#262934',
+				600: '#22232c',
+			},
 		},
 		colors.tokens
 	).build()
