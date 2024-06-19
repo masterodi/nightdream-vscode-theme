@@ -147,7 +147,8 @@
             "scope": [
                 "entity.name.function",
                 "support.function",
-                "punctuation.definition.template-expression"
+                "punctuation.definition.template-expression",
+                "meta.function-call"
             ],
             "settings": {
                 "foreground": "#8cb9ff"

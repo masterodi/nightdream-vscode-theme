@@ -181,6 +181,7 @@ const createTokenColors = (
 			'entity.name.function',
 			'support.function',
 			'punctuation.definition.template-expression',
+			'meta.function-call',
 		],
 		settings: { foreground: colors.FUNCTION },
 	},
