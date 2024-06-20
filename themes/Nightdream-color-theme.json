@@ -151,7 +151,7 @@
                 "meta.function-call"
             ],
             "settings": {
-                "foreground": "#8cb9ff"
+                "foreground": "#84b1ff"
             }
         },
         {
@@ -175,7 +175,7 @@
                 "storage"
             ],
             "settings": {
-                "foreground": "#9eace7"
+                "foreground": "#77aead"
             }
         },
         {
