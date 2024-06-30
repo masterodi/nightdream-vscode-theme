@@ -10,10 +10,10 @@ const createWorkbenchColors = (
 ): VSCTheme['colors'] => ({
 	foreground: colors.foreground[500],
 	focusBorder: colors.accent[500],
-	'icon.foreground': colors.accent[500],
+	'icon.foreground': colors.foreground[400] ?? colors.accent[600],
 	'badge.background': colors.bg[400],
 	'badge.foreground': colors.foreground[400],
-	'input.background': colors.bg[600],
+	'input.background': colors.bg[400],
 	'input.foreground': colors.foreground[400],
 	'inputOption.activeBackground': colors.bg[400],
 	'inputOption.activeForeground': colors.foreground[400],
@@ -26,7 +26,7 @@ const createWorkbenchColors = (
 	'dropdown.foreground': colors.foreground[500],
 
 	'activityBar.activeBackground': '#00000000',
-	'activityBar.activeBorder': colors.accent[500],
+	'activityBar.activeBorder': colors.foreground[400] ?? colors.accent[600],
 	'activityBar.activeFocusBorder': colors.accent[500],
 	'activityBar.background': minimal ? colors.bg[500] : colors.bg[600],
 	'activityBar.border': '#00000000',
@@ -126,25 +126,25 @@ const createWorkbenchColors = (
 	'terminal.ansiBrightYellow': colors.terminal?.ansiBrightYellow ?? '#eed49f',
 
 	'gitDecoration.addedResourceForeground':
-		colors.gitDecoration?.addedResourceForeground ?? '#a6da95',
+		colors.gitDecoration?.addedResourceForeground ?? '#5fb3a1',
 	'gitDecoration.conflictingResourceForeground':
-		colors.gitDecoration?.conflictingResourceForeground ?? '#eed49f',
+		colors.gitDecoration?.conflictingResourceForeground ?? '#d0679d',
 	'gitDecoration.deletedResourceForeground':
-		colors.gitDecoration?.deletedResourceForeground ?? '#ed8796',
+		colors.gitDecoration?.deletedResourceForeground ?? '#d0679d',
 	'gitDecoration.ignoredResourceForeground':
-		colors.gitDecoration?.ignoredResourceForeground ?? '#6e738d',
+		colors.gitDecoration?.ignoredResourceForeground ?? '#767c9d70',
 	'gitDecoration.modifiedResourceForeground':
-		colors.gitDecoration?.modifiedResourceForeground ?? '#91d7e3',
+		colors.gitDecoration?.modifiedResourceForeground ?? '#ADD7FF',
 	'gitDecoration.renamedResourceForeground':
-		colors.gitDecoration?.renamedResourceForeground ?? '#8bd5ca',
+		colors.gitDecoration?.renamedResourceForeground ?? '#5DE4c7',
 	'gitDecoration.stageDeletedResourceForeground':
-		colors.gitDecoration?.stageDeletedResourceForeground ?? '#ed8796',
+		colors.gitDecoration?.stageDeletedResourceForeground ?? '#d0679d',
 	'gitDecoration.stageModifiedResourceForeground':
-		colors.gitDecoration?.stageModifiedResourceForeground ?? '#eed49f',
+		colors.gitDecoration?.stageModifiedResourceForeground ?? '#ADD7FF',
 	'gitDecoration.submoduleResourceForeground':
-		colors.gitDecoration?.submoduleResourceForeground ?? '#91d7e3',
+		colors.gitDecoration?.submoduleResourceForeground ?? '#89ddff',
 	'gitDecoration.untrackedResourceForeground':
-		colors.gitDecoration?.untrackedResourceForeground ?? '#a6da95',
+		colors.gitDecoration?.untrackedResourceForeground ?? '#5DE4c7',
 });
 
 const createTokenColors = (
@@ -210,7 +210,7 @@ const createTokenColors = (
 		},
 	},
 	{
-		scope: ['support.type.primitive'],
+		scope: ['support.type.primitive', 'storage.type.java'],
 		settings: {
 			foreground: colors.PRIMITIVE,
 		},

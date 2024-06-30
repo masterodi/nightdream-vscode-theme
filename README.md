@@ -9,7 +9,3 @@
 ### Flutter
 
 ![flutter](assets/images/flutter.png)
-
-### Python
-
-![python](assets/images/py.png)
