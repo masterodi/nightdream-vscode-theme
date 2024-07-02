@@ -2,7 +2,7 @@
     "name": "Nightdream",
     "colors": {
         "foreground": "#969ac3",
-        "focusBorder": "#4beec9",
+        "focusBorder": "#4fb9a1",
         "icon.foreground": "#d5d9f8",
         "badge.background": "#232631",
         "badge.foreground": "#d5d9f8",
@@ -11,7 +11,7 @@
         "inputOption.activeBackground": "#232631",
         "inputOption.activeForeground": "#d5d9f8",
         "inputOption.activeBorder": "#00000000",
-        "button.background": "#4beec9",
+        "button.background": "#5ad1b6",
         "button.foreground": "#323444",
         "button.hoverBackground": "#88ffe3",
         "dropdown.background": "#181a22",
@@ -193,7 +193,7 @@
                 "storage.type.java"
             ],
             "settings": {
-                "foreground": "#3cd6d0"
+                "foreground": "#2eb0ab"
             }
         },
         {
@@ -208,7 +208,7 @@
                 "variable.parameter.function.language.special.self"
             ],
             "settings": {
-                "foreground": "#3cd6d0"
+                "foreground": "#2eb0ab"
             }
         },
         {
@@ -253,7 +253,7 @@
                 "entity.other.attribute-name.pseudo-class"
             ],
             "settings": {
-                "foreground": "#4beec9"
+                "foreground": "#7beed3"
             }
         },
         {
@@ -349,7 +349,7 @@
                 "source.yaml entity.name.tag"
             ],
             "settings": {
-                "foreground": "#7685c8"
+                "foreground": "#2eb0ab"
             }
         }
     ],

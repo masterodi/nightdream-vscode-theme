@@ -3,7 +3,7 @@
 	"displayName": "Nightdream",
 	"description": "A theme (not just) for those who like to work at night.",
 	"icon": "assets/icon.png",
-	"version": "0.0.33",
+	"version": "0.0.34",
 	"type": "module",
 	"repository": {
 		"type": "git",
@@ -22,11 +22,6 @@
 				"label": "Nightdream",
 				"uiTheme": "vs-dark",
 				"path": "./themes/Nightdream-color-theme.json"
-			},
-			{
-				"label": "Nightdream Sunlight",
-				"uiTheme": "vs-dark",
-				"path": "./themes/Nightdream-Sunlight-color-theme.json"
 			}
 		]
 	},

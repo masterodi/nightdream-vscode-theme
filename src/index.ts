@@ -16,25 +16,3 @@ const saveTheme = (theme: VSCTheme) => {
 };
 
 saveTheme(new Theme('Nightdream', colors.workbench, colors.tokens).build());
-
-saveTheme(
-	new Theme(
-		'Nightdream Sunlight',
-		{
-			...colors.workbench,
-			bg: {
-				...colors.workbench.bg,
-				400: '#41475a',
-				500: '#262934',
-				600: '#22232c',
-			},
-			foreground: {
-				400: '#c2d2ff',
-				500: '#909cbd',
-				600: '#6f7892',
-				700: '#454b5b',
-			},
-		},
-		colors.tokens
-	).build()
-);

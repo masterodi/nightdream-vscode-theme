@@ -9,7 +9,7 @@ const createWorkbenchColors = (
 	minimal: boolean = true
 ): VSCTheme['colors'] => ({
 	foreground: colors.foreground[500],
-	focusBorder: colors.accent[500],
+	focusBorder: colors.accent[700],
 	'icon.foreground': colors.foreground[400] ?? colors.accent[600],
 	'badge.background': colors.bg[400],
 	'badge.foreground': colors.foreground[400],
@@ -18,7 +18,7 @@ const createWorkbenchColors = (
 	'inputOption.activeBackground': colors.bg[400],
 	'inputOption.activeForeground': colors.foreground[400],
 	'inputOption.activeBorder': colors.border,
-	'button.background': colors.accent[500],
+	'button.background': colors.accent[600],
 	'button.foreground': colors.foreground[700] ?? colors.foreground[600],
 	'button.hoverBackground': colors.accent[400],
 	'dropdown.background': colors.bg[600],
