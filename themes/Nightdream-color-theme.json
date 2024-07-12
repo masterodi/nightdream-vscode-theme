@@ -132,7 +132,7 @@
                 "variable.other.property"
             ],
             "settings": {
-                "foreground": "#b2b8dc"
+                "foreground": "#e4f0fb"
             }
         },
         {
@@ -140,7 +140,7 @@
                 "variable.other.constant.object"
             ],
             "settings": {
-                "foreground": "#a2a8ff"
+                "foreground": "#b7e4ff"
             }
         },
         {
@@ -167,7 +167,7 @@
                 "keyword"
             ],
             "settings": {
-                "foreground": "#7685c8"
+                "foreground": "#7c8cd2"
             }
         },
         {
@@ -175,7 +175,7 @@
                 "storage"
             ],
             "settings": {
-                "foreground": "#7685c8"
+                "foreground": "#7c8cd2"
             }
         },
         {
@@ -184,7 +184,7 @@
                 "storage.modifier"
             ],
             "settings": {
-                "foreground": "#7685c8"
+                "foreground": "#7c8cd2"
             }
         },
         {
@@ -333,7 +333,7 @@
                 "storage.modifier.package"
             ],
             "settings": {
-                "foreground": "#b2b8dc"
+                "foreground": "#e4f0fb"
             }
         },
         {
