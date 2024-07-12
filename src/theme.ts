@@ -1,56 +1,54 @@
-import { ThemeTokenColors, ThemeWorkbenchColors } from './types/theme';
+import { ThemeTokenColors, ThemeWorkbenchColors } from "./types/theme";
 
 type Colors = {
-	workbench: ThemeWorkbenchColors;
-	tokens: ThemeTokenColors;
+  workbench: ThemeWorkbenchColors;
+  tokens: ThemeTokenColors;
 };
 
 export const colors = {
-	workbench: {
-		bg: {
-			300: '#2c2f3d',
-			400: '#232631',
-			500: '#1c1e27',
-			600: '#181a22',
-		},
-		foreground: {
-			400: '#d5d9f8',
-			500: '#969ac3',
-			600: '#7c80aa',
-			700: '#323444',
-		},
-		border: '#00000000',
-		accent: {
-			400: '#88ffe3',
-			500: '#4beec9',
-			600: '#5ad1b6',
-			700: '#4fb9a1',
-		},
-	},
-	tokens: {
-		COMMENT: '#5d6090',
-		VARIABLE: '#c9cdf8',
-		VARIABLE_PROPERTY: '#e4f0fb',
-		VARIABLE_CONSTANT: '#add7ff',
-		FUNCTION: '#96bbff',
-		FUNCTION_PARAMETER: '#c9cdf8',
-		KEYWORD: '#7685c8',
-		STORAGE: '#7685c8',
-		PRIMITIVE: '#2eb0ab',
-		CLASS: '#2eb0ab',
-		TAG: '#4beec9',
-		PUNCTUATION_TAG: '#fff',
-		ATTRIBUTE: '#7685c8',
-		ID: '#96bbff',
-		STRING: '#7beed3',
-		REGEXP: '#5ddabf',
-		CONSTANT: '#4beec9',
-		NUMBER: '#4beec9',
-		TRUTHY: '#4beec9',
-		FALSY: '#eb91aa',
-		OPERATOR: '#add7ff',
-		CSS_PROPERTY_NAME: '#eb91aa',
-		VARIABLE_READWRITE_ALIAS: '#add7ff',
-		JSON_KEY: '#2eb0ab',
-	},
+  workbench: {
+    bg: {
+      300: "#2c2f3d",
+      400: "#232631",
+      500: "#1c1e27",
+      600: "#181a22",
+    },
+    foreground: {
+      400: "#d5d9f8",
+      500: "#969ac3",
+      600: "#7c80aa",
+      700: "#323444",
+    },
+    border: "#00000000",
+    accent: {
+      400: "#88ffe3",
+      500: "#4beec9",
+      600: "#5ad1b6",
+      700: "#4fb9a1",
+    },
+  },
+  tokens: {
+    COMMENT: "#5d6090",
+    VARIABLE: "#e4f0fb",
+    VARIABLE_PROPERTY: "#b2b8dc",
+    VARIABLE_CONSTANT: "#a2a8ff",
+    FUNCTION: "#96bbff",
+    KEYWORD: "#7685c8",
+    STORAGE: "#7685c8",
+    PRIMITIVE: "#22a2bb",
+    CLASS: "#22a2bb",
+    TAG: "#4beec9",
+    ATTRIBUTE: "#7685c8",
+    ID: "#96bbff",
+    STRING: "#5de4c7",
+    REGEXP: "#5ddabf",
+    CONSTANT: "#5de4c7",
+    NUMBER: "#5de4c7",
+    TRUTHY: "#5de4c7",
+    FALSY: "#eb91aa",
+    PUNCTUATION: "#a6accd",
+    CSS_PROPERTY_NAME: "#eb91aa",
+    VARIABLE_READWRITE_ALIAS: "#b2b8dc",
+    JSON_KEY: "#e4f0fb",
+  },
 } satisfies Colors;
