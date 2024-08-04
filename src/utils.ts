@@ -15,8 +15,8 @@ const createWorkbenchColors = (
   "badge.foreground": colors.foreground[400],
   "input.background": colors.bg[400],
   "input.foreground": colors.foreground[400],
-  "inputOption.activeBackground": colors.bg[400],
-  "inputOption.activeForeground": colors.foreground[400],
+  "inputOption.activeBackground": colors.bg[600],
+  "inputOption.activeForeground": colors.accent[400],
   "inputOption.activeBorder": colors.border,
   "button.background": colors.accent[600],
   "button.foreground": colors.foreground[700] ?? colors.foreground[600],
@@ -29,7 +29,7 @@ const createWorkbenchColors = (
   "activityBar.activeBorder": colors.foreground[400] ?? colors.accent[600],
   "activityBar.activeFocusBorder": colors.accent[500],
   "activityBar.background": minimal ? colors.bg[500] : colors.bg[600],
-  "activityBar.border": "#00000000",
+  "activityBar.border": colors.border,
   "activityBar.foreground": colors.foreground[500],
   "activityBar.inactiveForeground": colors.foreground[600],
   "activityBarBadge.background": colors.bg[400],
@@ -95,6 +95,8 @@ const createWorkbenchColors = (
   "editorGroupHeader.tabsBackground": colors.bg[500],
 
   "tab.activeBackground": colors.bg[400],
+  "tab.activeForeground": colors.accent[400],
+  "tab.inactiveForeground": colors.foreground[700] ?? colors.foreground[600],
   "tab.inactiveBackground": colors.bg[500],
 
   "breadcrumb.background": colors.bg[500],
@@ -148,7 +150,7 @@ const createTokenColors = (
   colors: ThemeTokenColors
 ): VSCTheme["tokenColors"] => [
   {
-    scope: ["comment"],
+    scope: ["comment", "punctuation.definition.comment"],
     settings: {
       foreground: colors.COMMENT,
     },
@@ -195,7 +197,7 @@ const createTokenColors = (
     },
   },
   {
-    scope: ["storage"],
+    scope: ["storage", "keyword.operator"],
     settings: {
       foreground: colors.STORAGE,
     },
@@ -303,7 +305,7 @@ const createTokenColors = (
     },
   },
   {
-    scope: ["keyword.operator", "keyword.operator.assignment", "punctuation"],
+    scope: ["keyword.operator.assignment", "punctuation"],
     settings: {
       foreground: colors.PUNCTUATION,
     },
@@ -346,6 +348,10 @@ export class Theme {
     this.name = name;
     this.workbench = workbench;
     this.tokens = tokens;
+  }
+
+  getName() {
+    return `${this.name.replace(" ", "-")}-color-theme.json`;
   }
 
   build(minimal = true): VSCTheme {
