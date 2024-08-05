@@ -11,9 +11,12 @@
         "inputOption.activeBackground": "#1e1f2a",
         "inputOption.activeForeground": "#b6b8ff",
         "inputOption.activeBorder": "#00000000",
-        "button.background": "#9495cf",
-        "button.foreground": "#636980",
-        "button.hoverBackground": "#b6b8ff",
+        "button.background": "#1e1f2a",
+        "button.foreground": "#d8dfff",
+        "button.hoverBackground": "#32364a",
+        "button.secondaryBackground": "#1e1f2a",
+        "button.secondaryForeground": "#d8dfff",
+        "button.secondaryHoverBackground": "#32364a",
         "dropdown.background": "#1e1f2a",
         "dropdown.border": "#00000000",
         "dropdown.foreground": "#bbc1dc",
@@ -143,7 +146,7 @@
                 "variable.other.constant.object"
             ],
             "settings": {
-                "foreground": "#b2daff"
+                "foreground": "#b2f1ff"
             }
         },
         {
@@ -154,7 +157,7 @@
                 "meta.function-call"
             ],
             "settings": {
-                "foreground": "#8ba9eb"
+                "foreground": "#bcd3ff"
             }
         },
         {
@@ -179,7 +182,7 @@
                 "keyword.operator"
             ],
             "settings": {
-                "foreground": "#9fa7ca"
+                "foreground": "#919fd5"
             }
         },
         {
@@ -197,7 +200,7 @@
                 "storage.type.java"
             ],
             "settings": {
-                "foreground": "#5ebacd"
+                "foreground": "#8ba9eb"
             }
         },
         {
@@ -212,7 +215,7 @@
                 "variable.parameter.function.language.special.self"
             ],
             "settings": {
-                "foreground": "#5ebacd"
+                "foreground": "#8ba9eb"
             }
         },
         {
@@ -232,7 +235,7 @@
                 "punctuation.definition.typeparameters.end"
             ],
             "settings": {
-                "foreground": "#b2daff"
+                "foreground": "#91b4d5"
             }
         },
         {
@@ -240,7 +243,7 @@
                 "entity.other.attribute-name"
             ],
             "settings": {
-                "foreground": "#9fa7ca"
+                "foreground": "#919fd5"
             }
         },
         {
@@ -248,7 +251,7 @@
                 "entity.other.attribute-name.id"
             ],
             "settings": {
-                "foreground": "#b2daff"
+                "foreground": "#b2f1ff"
             }
         },
         {
@@ -317,7 +320,7 @@
                 "punctuation"
             ],
             "settings": {
-                "foreground": "#b2daff"
+                "foreground": "#91b4d5"
             }
         },
         {
