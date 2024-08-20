@@ -1,13 +1,13 @@
-import { writeFileSync } from "fs";
-import { colors } from "./theme";
-import { Theme } from "./utils";
+import { writeFileSync } from 'fs';
+import { Nightdream } from './theme';
+import Theme from './utils/Theme';
 
 const saveTheme = (theme: Theme) => {
-  const themeJson = JSON.stringify(theme.build(), undefined, 4);
+	const themeJson = JSON.stringify(theme.build(), undefined, 4);
 
-  writeFileSync(`${process.cwd()}/themes/${theme.getName()}`, themeJson, {
-    encoding: "utf8",
-  });
+	writeFileSync(`${process.cwd()}/themes/${theme.getName()}`, themeJson, {
+		encoding: 'utf8',
+	});
 };
 
-saveTheme(new Theme("Nightdream", colors.workbench, colors.tokens));
+saveTheme(Nightdream);
