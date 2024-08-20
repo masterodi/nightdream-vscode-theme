@@ -195,7 +195,7 @@ const createTokenColors = (colors: TokenColorsScheme): VSCTheme['tokenColors'] =
 		settings: { foreground: colors.VARIABLE },
 	},
 	{
-		scope: ['support.variable', 'variable.other.predefined', 'variable.other.property'],
+		scope: ['variable.other.predefined', 'variable.other.property'],
 		settings: {
 			foreground: colors.VARIABLE_PROPERTY,
 		},
@@ -249,6 +249,7 @@ const createTokenColors = (colors: TokenColorsScheme): VSCTheme['tokenColors'] =
 		scope: [
 			'support.class',
 			'support.type',
+			'support.variable',
 			'entity.name.type',
 			'entity.other.inherited-class',
 			'entity.name.scope-resolution',
@@ -384,16 +385,25 @@ export default class Theme {
 		};
 	}
 
-	static fromBases(name: string, { background, foreground, accent, border, tokens }) {
+	static fromBases(
+		name: string,
+		props: {
+			background: string;
+			foreground: string;
+			accent: string;
+			border: string;
+			tokens: TokenColorsScheme;
+		}
+	) {
 		const theme = new Theme(
 			name,
 			{
-				background: new Color(background, { brighten: 0.2, darken: 0.1 }),
-				foreground: new Color(foreground, { darken: 2 }),
-				accent: new Color(accent),
-				border: border,
+				background: new Color(props.background, { brighten: 0.2, darken: 0.1 }),
+				foreground: new Color(props.foreground, { darken: 2 }),
+				accent: new Color(props.accent),
+				border: props.border,
 			},
-			tokens
+			props.tokens
 		);
 
 		console.log('Workbench colors:');

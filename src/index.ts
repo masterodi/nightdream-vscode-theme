@@ -1,5 +1,5 @@
 import { writeFileSync } from 'fs';
-import { Nightdream } from './theme';
+import { Nightdream, NightdreamMonoguai } from './theme';
 import Theme from './utils/Theme';
 
 const saveTheme = (theme: Theme) => {
@@ -11,3 +11,4 @@ const saveTheme = (theme: Theme) => {
 };
 
 saveTheme(Nightdream);
+saveTheme(NightdreamMonoguai);
