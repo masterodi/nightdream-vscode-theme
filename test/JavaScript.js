@@ -1,49 +1,47 @@
-import { Binder } from './binder';
-import { Channel } from './channel';
-import { Dialog } from './dialog';
-
-// comment test
-export class Bot {
-	constructor() {
-		/** @internal  */
-		this._dialogHandlers = [];
-		/** @internal */
-		this._performerHandlers = [];
-		this.when = Binder.for(this);
-		this._channels = new Map();
+class Canvas {
+	constructor(id, parent, width, height) {
+		this.id = id;
+		this.listId = null;
+		this.parent = parent;
+		this.width = width;
+		this.height = height;
+		this.ctx = null;
 	}
 
-	/** @internal */
-	_channelFor(channelId) {
-		const channel = this._channels.get(channelId) || new Channel();
-		this._channels.set(channelId, channel);
-		return channel;
+	// new class stuff above here
+
+	create() {
+		if (this.ctx !== null) {
+			console.log('Canvas already created!');
+			return;
+		} else {
+			let divWrapper = document.createElement('div');
+			let canvasElem = document.createElement('canvas');
+			this.parent.appendChild(divWrapper);
+			divWrapper.appendChild(canvasElem);
+
+			divWrapper.id = this.id;
+			canvasElem.width = this.width;
+			canvasElem.height = this.height;
+
+			this.ctx = canvasElem.getContext('2d');
+		}
 	}
 
-	dialog(channel, users) {
-		return new Dialog(this, channel, users);
-	}
+	createReportList() {
+		if (this.listId !== null) {
+			console.log('Report list already created!');
+			return;
+		} else {
+			let list = document.createElement('ul');
+			list.id = this.id + '-reporter';
 
-	// @deprecated
-	abortDialog(channel, user) {
-		this._channelFor(channel).abort(user);
-	}
+			let canvasWrapper = document.getElementById(this.id);
+			canvasWrapper.appendChild(list);
 
-	onMessage(message) {
-		const performer = this._performerHandlers.find((c) => c.match(message));
-		if (performer) return performer.handler(message, this);
-		const channel = this._channelFor(message.channel);
-		const hasActions = channel.hasFor(message.user);
-		if (hasActions) return channel.processMessage(message);
-		const dialog = this._dialogHandlers.find((c) => c.match(message));
-
-		if (dialog) {
-			const obj = this.dialog(message.channel, [message.user]);
-			obj._manager.perform(message);
-			dialog.handler(obj, this);
+			this.listId = list.id;
 		}
 	}
 }
 
-const start = '123';
-const end = `${start}456`;
+export { Canvas };

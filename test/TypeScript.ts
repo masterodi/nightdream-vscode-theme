@@ -1,64 +1,47 @@
-import { Binder } from './binder';
-import { Channel } from './channel';
-import { Dialog } from './dialog';
-import { UserMessage } from './types';
+export enum Phylum {
+	Chordata,
+}
 
-type Matcher = { match: (message: UserMessage) => boolean };
+interface Loyalty {
+	beLoyal<T>(param: T): any;
+}
 
-type DialogHandler<T extends Bot> = Matcher & {
-	handler: (dialog: Dialog<T>, bot: T) => any;
-};
+export default class Animal {
+	private _type: Phylum;
 
-type PerformerHandler<T> = Matcher & {
-	handler: (message: UserMessage, bot: T) => any;
-};
-
-const num = 123;
-
-export type Test = typeof num;
-
-export abstract class Bot<BotMessage = any> extends OtherClass {
-	/** @internal */
-	_dialogHandlers: DialogHandler<this>[] = [];
-	/** @internal */
-	_performerHandlers: PerformerHandler<this>[] = [];
-
-	when = Binder.for(this);
-
-	_: { BotMessage: BotMessage };
-	private _channels = new Map<string, Channel>();
-
-	abstract listen(arg?: any): this;
-	abstract say(channel: string, message: BotMessage): Promise<any>;
-
-	/** @internal */
-	_channelFor(channelId: string) {
-		const channel = this._channels.get(channelId) || new Channel();
-		this._channels.set(channelId, channel);
-		return channel;
+	get type() {
+		return this._type;
 	}
 
-	dialog(channel: string, users: string[]) {
-		return new Dialog(this, channel, users);
+	constructor(type: Phylum) {
+		this._type = type;
+	}
+}
+
+export class Dog extends Animal implements Loyalty {
+	private _name: string;
+
+	constructor(name: string) {
+		super(Phylum.Chordata);
+		this._name = name;
 	}
 
-	abortDialog(channel: string, user: string) {
-		this._channelFor(channel).abort(user);
-	}
-
-	protected onMessage(message: UserMessage): any {
-		const performer = this._performerHandlers.find((c) => c.match(message));
-		if (performer) return performer.handler(message, this);
-
-		const channel = this._channelFor(message.channel);
-		const hasActions = channel.hasFor(message.user);
-		if (hasActions) return channel.processMessage(`message ${message}`);
-
-		const dialog = this._dialogHandlers.find((c) => c.match(message));
-		if (dialog) {
-			const obj = this.dialog(message.channel, [message.user]);
-			obj._manager.perform(message);
-			dialog.handler(obj, this);
+	async beLoyal<T>(param: T) {
+		try {
+			const test = `String Test - ${false} - ${true}`;
+			console.log(test + param);
+			throw new Error('Something went wrong with the test');
+		} catch (err) {
+			if (err instanceof Error) {
+				return err;
+			}
+			throw err;
 		}
 	}
 }
+
+export type InferedClass = typeof Dog;
+
+const constant = 123;
+
+export type InferedConstant = typeof constant;

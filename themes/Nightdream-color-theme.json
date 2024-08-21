@@ -34,7 +34,7 @@
         "sideBarSectionHeader.background": "#1f212b",
         "list.activeSelectionBackground": "#272833",
         "list.activeSelectionForeground": "#eef4ff",
-        "list.hoverBackground": "#272833",
+        "list.hoverBackground": "#2c2e39",
         "list.inactiveSelectionBackground": "#272833",
         "list.inactiveSelectionForeground": "#eef4ff",
         "list.highlightForeground": "#5de4c7",
@@ -45,25 +45,29 @@
         "statusBar.debuggingBackground": "#272833",
         "editor.background": "#1f212b",
         "editor.foreground": "#eef4ff",
-        "editor.lineHighlightBackground": "#272833bb",
-        "editorLineNumber.foreground": "#5d637b",
-        "editorLineNumber.activeForeground": "#eef4ff",
-        "editorLineNumber.dimmedForeground": "#5d637b",
-        "editor.selectionBackground": "#272833",
+        "editor.lineHighlightBackground": "#3c3e4926",
+        "editorLineNumber.foreground": "#1f263a",
+        "editorLineNumber.activeForeground": "#bbc1dc",
+        "editorLineNumber.dimmedForeground": "#1f263a",
+        "editor.selectionBackground": "#3c3e49d9",
+        "editor.selectionHighlightBackground": "#3c3e4980",
         "editor.wordHighlightBackground": "#3c3e4980",
         "editor.wordHighlightBorder": "#e1e7ff40",
+        "editor.findMatchHighlightBackground": "#3c3e4940",
         "editorWidget.background": "#1f212b",
         "editorWidget.foreground": "#bbc1dc",
         "editorSuggestWidget.highlightForeground": "#5de4c7",
-        "editorSuggestWidget.focusHighlightForeground": "#95fffa",
+        "editorSuggestWidget.focusHighlightForeground": "#5de4c7",
+        "editorSuggestWidget.selectedBackground": "#191b24",
         "peekViewEditor.background": "#1f212b",
-        "peekView.border": "#00000000",
+        "peekView.border": "#191b24",
         "peekViewEditorGutter.background": "#1f212b",
         "peekViewResult.background": "#1f212b",
-        "peekViewTitle.background": "#1f212b",
+        "peekViewTitle.background": "#1b1d27",
         "peekViewTitleLabel.foreground": "#eef4ff",
         "peekViewResult.lineForeground": "#5d637b",
         "peekViewTitleDescription.foreground": "#5d637b",
+        "peekViewEditor.matchHighlightBackground": "#3c3e4940",
         "debugToolBar.background": "#1f212b",
         "titleBar.activeBackground": "#1f212b",
         "titleBar.inactiveBackground": "#1f212b",
@@ -78,9 +82,9 @@
         "menubar.selectionForeground": "#eef4ff",
         "editorGroupHeader.tabsBackground": "#1f212b",
         "tab.activeBackground": "#272833",
-        "tab.activeForeground": "#95fffa",
-        "tab.inactiveForeground": "#5d637b",
+        "tab.activeForeground": "#5de4c7",
         "tab.inactiveBackground": "#1f212b",
+        "tab.inactiveForeground": "#bbc1dc",
         "breadcrumb.background": "#1f212b",
         "breadcrumb.foreground": "#bbc1dc",
         "panel.background": "#1f212b",
@@ -166,29 +170,13 @@
                 "variable.parameter"
             ],
             "settings": {
-                "foreground": "#e4f0fb"
+                "foreground": "#e4f0fb",
+                "fontStyle": "italic"
             }
         },
         {
             "scope": [
-                "keyword"
-            ],
-            "settings": {
-                "foreground": "#89cbde"
-            }
-        },
-        {
-            "scope": [
-                "storage.type",
-                "keyword.operator"
-            ],
-            "settings": {
-                "foreground": "#7a95bc"
-            }
-        },
-        {
-            "scope": [
-                "storage.modifier.async",
+                "keyword",
                 "storage.modifier"
             ],
             "settings": {
@@ -197,8 +185,16 @@
         },
         {
             "scope": [
-                "support.type.primitive",
-                "storage.type.java"
+                "storage",
+                "keyword.operator"
+            ],
+            "settings": {
+                "foreground": "#7a95bc"
+            }
+        },
+        {
+            "scope": [
+                "support.type.primitive"
             ],
             "settings": {
                 "foreground": "#909caa"
@@ -231,10 +227,8 @@
         },
         {
             "scope": [
-                "punctuation.definition.tag.begin",
-                "punctuation.definition.tag.end",
-                "punctuation.definition.typeparameters.begin",
-                "punctuation.definition.typeparameters.end"
+                "punctuation.definition.tag",
+                "punctuation.definition.typeparameters"
             ],
             "settings": {
                 "foreground": "#a6b6cf"
@@ -318,7 +312,7 @@
         },
         {
             "scope": [
-                "keyword.operator.assignment",
+                "meta.brace",
                 "punctuation"
             ],
             "settings": {

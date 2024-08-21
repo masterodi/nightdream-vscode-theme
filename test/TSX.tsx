@@ -1,7 +1,6 @@
 import React from 'react';
 
 const template = `${JSON.stringify({ something: 'else' })}`;
-const original = JSON.stringify({ something: 'else' });
 
 const Component = () => (
 	<>
@@ -11,16 +10,9 @@ const Component = () => (
 );
 
 export const Main = () => (
-	<div class='container'>
+	<div class="container">
 		<Component />
 		{template}
 		<Component />
 	</div>
 );
-
-const f = true;
-
-const s = ['s', 's'];
-
-const falsy = false;
-const now = new Date();
