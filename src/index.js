@@ -1,6 +1,6 @@
-import Theme from './utils/Theme';
+import { saveTheme, Theme } from 'painless-vsctheming';
 
-export const Nightdream = Theme.fromBases('Nightdream', {
+const Nightdream = Theme.fromBases('Nightdream', {
 	background: '#1f212b',
 	foreground: '#bbc1dc',
 	accent: '#5de4c7',
@@ -27,7 +27,7 @@ export const Nightdream = Theme.fromBases('Nightdream', {
 	},
 });
 
-export const NightdreamMonoguai = Theme.fromBases('Nightdream Monoguai', {
+const NightdreamMonoguai = Theme.fromBases('Nightdream Monoguai', {
 	background: '#282a39',
 	foreground: '#eaf2f1',
 	accent: '#a99dec',
@@ -52,3 +52,6 @@ export const NightdreamMonoguai = Theme.fromBases('Nightdream Monoguai', {
 		PROPERTY_NAME: '#EAF2F1',
 	},
 });
+
+saveTheme(Nightdream);
+saveTheme(NightdreamMonoguai);
