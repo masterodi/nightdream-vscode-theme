@@ -35,9 +35,6 @@
 		"build": "bun run src/index.js"
 	},
 	"devDependencies": {
-		"@types/chroma-js": "^2.4.4",
-		"@types/node": "^20.12.7",
-		"chroma-js": "^3.0.0",
 		"painless-vsctheming": "^0.1.0"
 	}
 }
