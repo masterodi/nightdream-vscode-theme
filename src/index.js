@@ -48,7 +48,8 @@ const NightdreamMonoguai = Theme.fromBases('Nightdream Monoguai', {
 		STRING: '#FFD76D',
 		CONSTANT: '#a99dec',
 		PUNCTUATION: '#888D94',
-		TRUTHY: '#FF657A',
+		TRUTHY: '#9CD1BB',
+		FALSY: '#FF657A',
 		PROPERTY_NAME: '#EAF2F1',
 	},
 });

@@ -291,7 +291,7 @@
                 "keyword.control.new"
             ],
             "settings": {
-                "foreground": "#FF657A"
+                "foreground": "#9CD1BB"
             }
         },
         {
@@ -307,7 +307,7 @@
                 "constant.language.undefined"
             ],
             "settings": {
-                "foreground": "#a99dec"
+                "foreground": "#FF657A"
             }
         },
         {
