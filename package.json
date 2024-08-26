@@ -3,7 +3,7 @@
 	"displayName": "Nightdream",
 	"description": "A theme (not just) for those who like to work at night.",
 	"icon": "icon.png",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"type": "module",
 	"repository": {
 		"type": "git",
@@ -16,6 +16,7 @@
 	"categories": [
 		"Themes"
 	],
+	"license": "GPL-3.0-only",
 	"contributes": {
 		"themes": [
 			{
