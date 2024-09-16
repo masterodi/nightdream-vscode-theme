@@ -3,7 +3,7 @@
 	"displayName": "Nightdream",
 	"description": "A theme (not just) for those who like to work at night.",
 	"icon": "icon.png",
-	"version": "0.2.0",
+	"version": "0.2.1",
 	"type": "module",
 	"repository": {
 		"type": "git",
@@ -36,6 +36,6 @@
 		"build": "bun run src/index.js"
 	},
 	"devDependencies": {
-		"painless-vsctheming": "^0.1.0"
+		"painless-vsctheming": "^0.1.1"
 	}
 }
