@@ -162,7 +162,7 @@
                 "meta.function-call"
             ],
             "settings": {
-                "foreground": "#a8b8f0"
+                "foreground": "#add7ff"
             }
         },
         {
@@ -180,7 +180,7 @@
                 "storage.modifier"
             ],
             "settings": {
-                "foreground": "#b5d6fb"
+                "foreground": "#83e1c8c0"
             }
         },
         {
@@ -189,7 +189,7 @@
                 "keyword.operator"
             ],
             "settings": {
-                "foreground": "#91B4D5"
+                "foreground": "#91b4d5"
             }
         },
         {
