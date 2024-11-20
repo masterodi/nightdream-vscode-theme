@@ -180,7 +180,7 @@
                 "storage.modifier"
             ],
             "settings": {
-                "foreground": "#83e1c8c0"
+                "foreground": "#a2bbec"
             }
         },
         {
@@ -222,7 +222,7 @@
                 "support.class.component"
             ],
             "settings": {
-                "foreground": "#83e1c8"
+                "foreground": "#5de4c7"
             }
         },
         {
@@ -247,7 +247,7 @@
                 "entity.other.attribute-name.id"
             ],
             "settings": {
-                "foreground": "#83e1c8"
+                "foreground": "#5de4c7"
             }
         },
         {
@@ -256,7 +256,7 @@
                 "entity.other.attribute-name.pseudo-class"
             ],
             "settings": {
-                "foreground": "#83e1c8"
+                "foreground": "#5de4c7"
             }
         },
         {
@@ -264,7 +264,7 @@
                 "string.regexp"
             ],
             "settings": {
-                "foreground": "#5ddabf"
+                "foreground": "#ff0000"
             }
         },
         {
@@ -273,7 +273,7 @@
                 "constant.language"
             ],
             "settings": {
-                "foreground": "#83e1c8"
+                "foreground": "#5de4c7"
             }
         },
         {
@@ -282,7 +282,7 @@
                 "keyword.other.unit"
             ],
             "settings": {
-                "foreground": "#83e1c8"
+                "foreground": "#5de4c7"
             }
         },
         {
@@ -291,7 +291,7 @@
                 "keyword.control.new"
             ],
             "settings": {
-                "foreground": "#83e1c8"
+                "foreground": "#5de4c7"
             }
         },
         {
@@ -335,7 +335,7 @@
                 "storage.modifier.package"
             ],
             "settings": {
-                "foreground": "#e4f0fb"
+                "foreground": "#a6accdCC"
             }
         }
     ],

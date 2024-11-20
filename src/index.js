@@ -10,24 +10,25 @@ const Nightdream = Theme.fromBases('Nightdream', {
 		VARIABLE: '#e4f0fb',
 		VARIABLE_PROPERTY: '#e4f0fb',
 		VARIABLE_CONSTANT: '#e4f0fb',
+		VARIABLE_READWRITE_ALIAS: '#a6accdCC',
 		FUNCTION: '#add7ff',
-		KEYWORD: '#83e1c8c0',
+		KEYWORD: '#a2bbec',
 		STORAGE: '#91b4d5',
 		CLASS: '#a6accdCC',
-		TAG: '#83e1c8',
+		TAG: '#5de4c7',
 		ATTRIBUTE: '#b5d6fb',
-		ID: '#83e1c8',
-		STRING: '#83e1c8',
-		REGEXP: '#5ddabf',
-		CONSTANT: '#83e1c8',
-		TRUTHY: '#83e1c8',
+		ID: '#5de4c7',
+		STRING: '#5de4c7',
+		REGEXP: '#ff0000',
+		CONSTANT: '#5de4c7',
+		TRUTHY: '#5de4c7',
 		FALSY: '#d0679d',
 		PUNCTUATION: '#a6accd',
 		PROPERTY_NAME: '#e4f0fb',
 	},
 });
 
-const NightdreamMonoguai = Theme.fromBases('Nightdream Monoguai', {
+const NightdreamMonokai = Theme.fromBases('Nightdream Monokai', {
 	background: '#282a39',
 	foreground: '#eaf2f1',
 	accent: '#a99dec',
@@ -55,4 +56,4 @@ const NightdreamMonoguai = Theme.fromBases('Nightdream Monoguai', {
 });
 
 saveTheme(Nightdream);
-saveTheme(NightdreamMonoguai);
+saveTheme(NightdreamMonokai);

@@ -3,11 +3,11 @@
 	"displayName": "Nightdream",
 	"description": "A theme (not just) for those who like to work at night.",
 	"icon": "icon.png",
-	"version": "0.2.2",
+	"version": "0.3.0",
 	"type": "module",
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/mrheio/nightdream-vscode-theme.git"
+		"url": "https://github.com/masterodi/nightdream-vscode-theme.git"
 	},
 	"engines": {
 		"vscode": "^1.87.0"
@@ -25,9 +25,9 @@
 				"path": "./themes/Nightdream-color-theme.json"
 			},
 			{
-				"label": "Nightdream Monoguai",
+				"label": "Nightdream Monokai",
 				"uiTheme": "vs-dark",
-				"path": "./themes/Nightdream-Monoguai-color-theme.json"
+				"path": "./themes/Nightdream-Monokai-color-theme.json"
 			}
 		]
 	},
@@ -36,6 +36,6 @@
 		"build": "bun run src/index.js"
 	},
 	"devDependencies": {
-		"painless-vsctheming": "^0.1.1"
+		"painless-vsctheming": "^0.3.0"
 	}
 }
